@@ -9,7 +9,7 @@ class DelayedButton extends React.Component {
 
   onDelayedClick(e) {
     e.persist()
-    setTimeout(() => { this.props.onDelayedClick(e) }, this.props.delay)
+    setTimeout(() = { this.props.onDelayedClick(e) }, this.props.delay)
     // debugger
   }
 
@@ -24,3 +24,18 @@ class DelayedButton extends React.Component {
 }
 
 export default DelayedButton
+
+// onDelayedClick(e) {
+//   e.persist()
+//   setTimeout(this.props.onDelayedClick, this.props.delay, e)
+//   // debugger
+// }
+//
+// render(){
+//   return(
+//     <div>
+//       <p>Delayed Button</p>
+//       <button onClick={this.onDelayedClick}>Submit</button>
+//     </div>
+//   );
+// }
