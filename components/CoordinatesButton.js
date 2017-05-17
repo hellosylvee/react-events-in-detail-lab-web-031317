@@ -13,6 +13,9 @@ class CoordinatesButton extends React.Component {
     var coordinates = this.props.onReceiveCoordinates
     coordinates([xCoord, yCoord])
     // debugger
+
+    // const coords = [e.clientX, e.clientY]
+    // this.props.onReceiveCoordinates(coords)
   }
 
   render(){
